@@ -1,0 +1,20 @@
+#!/bin/bash
+
+KML_FILENAME="$1.kml"
+GEOJSON_FILENAME="$1.down.geojson"
+WKT_FILENAME="$1.down.wkt"
+
+if [ -z "$1" ]; then
+  echo "usage: down 123" >&2
+  exit 1
+fi
+
+if [ "$KML_FILENAME" -nt "$GEOJSON_FILENAME" ]; then
+  echo kml '>>' geojson
+  ./convert $KML_FILENAME $GEOJSON_FILENAME
+fi
+
+if [ "$GEOJSON_FILENAME" -nt "$WKT_FILENAME" ]; then
+  echo geojson '>>' wkt
+  ./convert "$GEOJSON_FILENAME" "$WKT_FILENAME"
+fi

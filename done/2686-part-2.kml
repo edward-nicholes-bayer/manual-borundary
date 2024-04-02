@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>2686-part-2</name>
+	<gx:CascadingStyle kml:id="__managed_style_277D3B854E2ED8A50387">
+		<Style>
+			<IconStyle>
+				<scale>1.44</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1A11AA2E362ED8A50387">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0D6E84B9B92ED8A50387">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1A11AA2E362ED8A50387</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_277D3B854E2ED8A50387</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0256A1FC752ED8A4FBEE">
+		<styleUrl>#__managed_style_0D6E84B9B92ED8A50387</styleUrl>
+		<ExtendedData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-89.3806254,41.6157038,0 -89.380797,41.6154712,0 -89.38094719999999,41.6152225,0 -89.3809633,41.6149378,0 -89.38093523370335,41.61452409989357,0 -89.38089264526202,41.61419064229366,0 -89.3807819,41.6139512,0 -89.378626,41.6139474,0 -89.3785536,41.6140105,0 -89.37874669999999,41.6142793,0 -89.37883789999999,41.6143394,0 -89.3793046,41.6148528,0 -89.3794388,41.6150734,0 -89.3794549,41.6152017,0 -89.3793912,41.6155301,0 -89.37984109999999,41.6156388,0 -89.38016555345823,41.61570980597257,0 -89.38052863859895,41.61579699970609,0 -89.3806254,41.6157038,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+WKT_FILENAME="$1.wkt"
+GEOJSON_FILENAME="$1.up.geojson"
+KML_FILENAME="$1.up.kml"
+
+if [ -z "$1" ]; then
+  echo "usage: up 123" >&2
+  exit 1
+fi
+
+if [ ! -f $WKT_FILENAME ]; then
+  echo "Error: No such file $WKT_FILENAME" >&2
+  exit 1
+fi
+
+if [ "$WKT_FILENAME" -nt "$GEOJSON_FILENAME" ]; then
+  echo wkt '>>' geojson
+  ./convert "$WKT_FILENAME" "$GEOJSON_FILENAME"
+fi
+
+if [ "$GEOJSON_FILENAME" -nt "$KML_FILENAME" ]; then
+  echo geojson '>>' kml
+  ./convert $GEOJSON_FILENAME $KML_FILENAME
+fi

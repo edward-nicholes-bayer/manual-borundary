@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const { readFileSync } = require('fs');
+const { stringify } = require('wkt');
+
+var geojson = readFileSync(0)?.toString('utf-8');
+var data = JSON.parse(geojson);
+
+const wkt = stringify(data.features[0]);
+
+console.log(wkt);

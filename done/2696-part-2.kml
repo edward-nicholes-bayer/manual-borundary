@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>2696-part-2</name>
+	<gx:CascadingStyle kml:id="__managed_style_22E0E444C72ED8D579E6">
+		<Style>
+			<IconStyle>
+				<scale>1.44</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_11CBBC64552ED8D579E6">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_05EEA1A78C2ED8D579E6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_11CBBC64552ED8D579E6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_22E0E444C72ED8D579E6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0CCE3933872ED8D57283">
+		<styleUrl>#__managed_style_05EEA1A78C2ED8D579E6</styleUrl>
+		<ExtendedData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-89.117002176765,41.72292976497071,0 -89.11709669664552,41.72291556906281,0 -89.11718089999999,41.7228625,0 -89.11714120000001,41.721514,0 -89.11526910000001,41.7215316,0 -89.1152712,41.722961,0 -89.11638174534019,41.72297048533984,0 -89.1166431629661,41.72293102033875,0 -89.117002176765,41.72292976497071,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

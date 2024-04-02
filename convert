@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ "$#" != "2" ]; then
+  echo "Usage: convert fileA fileB" >&2
+  exit 1
+fi
+
+EXT_A=${1##*.}
+EXT_B=${2##*.}
+
+if [ "$EXT_A" == "wkt" ] && [ "$EXT_B" == "kml" ]; then
+  cat "$1" | ./wkt2geojson | ./geojson2kml \> "$2"
+elif [ "$EXT_A" == "kml" ] && [ "$EXT_B" == "wkt" ]; then
+  cat "$1" | ./kml2geojson | ./geojson2wkt \> "$2"
+else
+  cat "$1" | ./${EXT_A}2${EXT_B} > "$2"
+fi

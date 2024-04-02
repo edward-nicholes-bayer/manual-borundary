@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const { readFileSync, writeFileSync } = require('fs');
+const toKML = require('geojson-to-kml');
+
+const geojson = readFileSync(0)?.toString('utf-8');
+
+var data = JSON.parse(geojson);
+
+while (data.type == 'Feature' || data.type == 'FeatureCollection')
+  data = data.features[0].geometry;
+
+const kml = toKML(data);
+console.log(kml);
+
+if(data.coordinates.length > 1) {
+  console.warn('NOTICE: "MultiPolygon" data - fragment files generated.')
+
+  data.type = 'Polygon';
+
+  data.coordinates.forEach((list, index) => {
+    data.coordinates = list;
+
+    const kml = toKML(data);
+    writeFileSync(`./part-${index}.kml`, kml, { encoding: 'utf8' });
+  });
+}

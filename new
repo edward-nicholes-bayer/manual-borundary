@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "usage: up 123" >&2
+  exit 1
+fi
+
+pbpaste > $1.wkt
+./up $1

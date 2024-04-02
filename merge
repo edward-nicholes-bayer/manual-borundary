@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const { readFileSync, readdirSync } = require('fs');
+const { kml2geojson } = require('./kml2geojson.js');
+
+const number = process.argv[2];
+
+if(!number)
+  throw new Error("Error: exactly one argument required");
+
+
+const fileNames = readdirSync('.');
+const regExp = new RegExp(`${number}-part-\\d+.kml`);
+const targets = fileNames.filter(fileName => regExp.test(fileName));
+
+const geojsons = [];
+for(let i=0; i<targets.length; i++) {
+  const target = `${number}-part-${i}.kml`;
+
+  const file = readFileSync(target, { encoding: 'utf8' });
+  const geojson = kml2geojson(file);
+  geojsons.push(geojson);
+}
+
+// Merge
+const base = geojsons[0];
+base.features[0].geometry.type = 'MultiPolygon';
+base.features[0].geometry.coordinates = geojsons.map(geojson => geojson.features[0].geometry.coordinates);
+
+console.log(JSON.stringify(base, null, 2));

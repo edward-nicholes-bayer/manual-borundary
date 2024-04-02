@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>2417-part-1</name>
+	<gx:CascadingStyle kml:id="__managed_style_2574228C0C2ED89A7F6C">
+		<Style>
+			<IconStyle>
+				<scale>1.44</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_18A2453D682ED89A7F6C">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_05856AD75C2ED89A7F6C">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_18A2453D682ED89A7F6C</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2574228C0C2ED89A7F6C</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="00B4644FD52ED89A7746">
+		<styleUrl>#__managed_style_05856AD75C2ED89A7F6C</styleUrl>
+		<ExtendedData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-85.54433434469645,38.86928965277663,0 -85.54418978167539,38.86930574367102,0 -85.54410973164454,38.86936344271172,0 -85.5439544898607,38.86941859066172,0 -85.54367694386258,38.86942351138156,0 -85.54274572426337,38.86942693163075,0 -85.54267812767318,38.86944392579743,0 -85.54266601831398,38.8695002587768,0 -85.54263984099101,38.87060191947175,0 -85.54251269978835,38.87165382383006,0 -85.5425670519307,38.87173068861707,0 -85.54266546883434,38.8717585124019,0 -85.54283215554025,38.87174655965947,0 -85.54370049860803,38.8717089246909,0 -85.54382437860413,38.87166554324948,0 -85.54390354880593,38.87158457989269,0 -85.54393772346684,38.87142400108859,0 -85.5440008004913,38.8713904196294,0 -85.54407015554045,38.87137911491352,0 -85.54438060219599,38.87139656360507,0 -85.54469603218526,38.87142162180903,0 -85.54477200200253,38.87112274825576,0 -85.54490945379447,38.87040298792267,0 -85.54501102777797,38.86953669659117,0 -85.54501282878996,38.86946189582223,0 -85.54497351404534,38.86940918400534,0 -85.54490584501841,38.86935893041971,0 -85.54483175475377,38.86934183341607,0 -85.54433434469645,38.86928965277663,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
